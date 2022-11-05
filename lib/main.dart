@@ -20,8 +20,15 @@ class Kezdo extends StatelessWidget {
             backgroundColor: Colors.lightGreen,
 // az alakalmazás teste, beállításokkal
           ),
-          body:  Center (
-            child: Image.asset('assets/kezdo_hatter.jpg'),
+          body:  const Center (
+
+            // háttérkép beillesztése
+            child: Icon(
+              Icons.emoji_food_beverage_outlined,
+              color:  Colors.blue,
+              size: 200.0,
+            ),
+
             ),
 
 
