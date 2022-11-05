@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
@@ -20,26 +21,43 @@ class Kezdo extends StatelessWidget {
             backgroundColor: Colors.lightGreen,
 // az alakalmazás teste, beállításokkal
           ),
-          body:  Center (
-            // gomb beillesztése
-            child: ElevatedButton.icon(
-              onPressed: () {},
-                icon: Icon(
-                  Icons.emoji_food_beverage,
-                  size: 100.0
-                ),
-                label: Text('Kattints teáért'),
+          // Oszloppban elhelyezet Widget-ek
+          body:  Column(
 
+            children: <Widget> [
+              Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.lightGreen,
+                child: CupertinoTextSelectionToolbarButton.text(text: 'Első'),
+              ),
+              Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.yellowAccent,
+                child: CupertinoTextSelectionToolbarButton.text(text: 'Második'),
+              ),
+              Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.blueAccent,
+                child: CupertinoTextSelectionToolbarButton.text(text: 'Harmadik'),
+              ),
+              Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.indigoAccent,
+                child: CupertinoTextSelectionToolbarButton.text(text: 'Negyedik'),
+              ),
 
-            ),
+            ],
           ),
+
+
 
 
           floatingActionButton: FloatingActionButton(
             onPressed: () {  },
             backgroundColor:  Colors.blueGrey,
-            child: const Text("Katt"),
-          ));
+            child: Text("Katt"),
+          ),
+          );
 
       }
     }
