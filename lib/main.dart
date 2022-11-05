@@ -24,8 +24,10 @@ class Kezdo extends StatelessWidget {
           // Sorban elhelyezet  Expanded Widget-ek
           body: Row(
             children: <Widget> [
-              // széthúzzuk a konténert a képernyő teljes szélességére
-                  Expanded(
+              // széthúzzuk a konténert a képernyő teljes szélességére a megyadott arány  szerint
+
+              Expanded(
+                flex:3,
                     child: Container(
                     padding: EdgeInsets.all(30),
                     color: Colors.yellowAccent,
@@ -35,6 +37,7 @@ class Kezdo extends StatelessWidget {
                   ),
                 ),
                 Expanded(
+                flex: 2,
                 child: Container(
                 padding: EdgeInsets.all(30),
                 color: Colors.orangeAccent,
@@ -42,6 +45,7 @@ class Kezdo extends StatelessWidget {
               ),
                 ),
               Expanded(
+                flex: 1,
                 child: Container(
                 padding: EdgeInsets.all(30),
                 color: Colors.redAccent,
