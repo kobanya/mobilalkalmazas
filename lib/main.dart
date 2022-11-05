@@ -10,7 +10,7 @@ class Kezdo extends StatelessWidget {
       Widget build(BuildContext context) {
         return Scaffold(
           appBar: AppBar(
-            title:  Text (
+            title:  const Text (
               "Az első mobilalkalmazásom",
             style: TextStyle
                      (fontWeight: FontWeight.bold
@@ -20,9 +20,10 @@ class Kezdo extends StatelessWidget {
             backgroundColor: Colors.lightGreen,
 // az alakalmazás teste, beállításokkal
           ),
-          body: Center (
+          body: const Center (
+
             child: Image(
-                image: NetworkImage('https://images.unsplash.com/photo-1667230149533-00c1428e682e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')
+                image: AssetImage('assets/kezdo_hatter.jpg'),
               ),
             ),
 
