@@ -20,16 +20,19 @@ class Kezdo extends StatelessWidget {
             backgroundColor: Colors.lightGreen,
 // az alakalmazás teste, beállításokkal
           ),
-          body:  const Center (
+          body:  Center (
+            // gomb beillesztése
+            child: ElevatedButton.icon(
+              onPressed: () {},
+                icon: Icon(
+                  Icons.emoji_food_beverage,
+                  size: 100.0
+                ),
+                label: Text('Kattints teáért'),
 
-            // háttérkép beillesztése
-            child: Icon(
-              Icons.emoji_food_beverage_outlined,
-              color:  Colors.blue,
-              size: 200.0,
-            ),
 
             ),
+          ),
 
 
           floatingActionButton: FloatingActionButton(
