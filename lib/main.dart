@@ -20,23 +20,18 @@ class Kezdo extends StatelessWidget {
             backgroundColor: Colors.lightGreen,
 // az alakalmazás teste, beállításokkal
           ),
-          body: const Center (
-            child: Text (
-              "Az első mondatom",
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.deepOrange,
-
+          body: Center (
+            child: Image(
+                image: NetworkImage('https://images.unsplash.com/photo-1667230149533-00c1428e682e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')
               ),
             ),
-          ),
+
           floatingActionButton: FloatingActionButton(
             onPressed: () {  },
             backgroundColor:  Colors.blueGrey,
             child: const Text("Katt"),
-          ),
-        );
+          ));
+
       }
     }
 
