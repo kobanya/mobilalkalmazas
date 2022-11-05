@@ -1,12 +1,13 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(
+void main() => runApp(const MaterialApp(
   // a fejléc szövege és annak
   home: Kezdo()
 ));
 
 class Kezdo extends StatelessWidget {
+  const Kezdo({super.key});
+
       @override
       Widget build(BuildContext context) {
         return Scaffold(
@@ -29,30 +30,33 @@ class Kezdo extends StatelessWidget {
               Expanded(
                 flex:3,
                     child: Container(
-                    padding: EdgeInsets.all(30),
+                    padding: const EdgeInsets.all(60),
                     color: Colors.yellowAccent,
-                    child: Text('1'),
+                    child: const Text('1'),
 
 
                   ),
                 ),
+
+                Expanded(child: Image.asset('/kezdo_hatter.jpg' ),
+                flex:2,
+                ),
                 Expanded(
                 flex: 2,
                 child: Container(
-                padding: EdgeInsets.all(30),
+                padding: const EdgeInsets.all(60),
                 color: Colors.orangeAccent,
-                child: Text('2'),
+                child: const Text('2'),
               ),
                 ),
               Expanded(
-                flex: 1,
+                flex: 2,
                 child: Container(
-                padding: EdgeInsets.all(30),
+                padding: const EdgeInsets.all(60),
                 color: Colors.redAccent,
-                child: Text('3'),
+                child: const Text('3'),
                 ),
               ),
-
             ],
           ),
 
@@ -62,7 +66,7 @@ class Kezdo extends StatelessWidget {
           floatingActionButton: FloatingActionButton(
             onPressed: () {  },
             backgroundColor:  Colors.blueGrey,
-            child: Text("Katt"),
+            child: const Text("Katt"),
           ),
           );
 
