@@ -21,43 +21,32 @@ class Kezdo extends StatelessWidget {
             backgroundColor: Colors.lightGreen,
 // az alakalmazás teste, beállításokkal
           ),
-          // Oszloppban elhelyezet Widget-ek
-          body:  Column(
-
+          // Sorban elhelyezet  Expanded Widget-ek
+          body: Row(
             children: <Widget> [
-              Container(
-                padding: EdgeInsets.all(30.0),
-                color: Colors.lightGreen,
-                child: CupertinoTextSelectionToolbarButton.text(text: 'Első'),
-              ),
-              Row(
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(30.0),
+              // széthúzzuk a konténert a képernyő teljes szélességére
+                  Expanded(
+                    child: Container(
+                    padding: EdgeInsets.all(30),
                     color: Colors.yellowAccent,
-                    child: CupertinoTextSelectionToolbarButton.text(text: 'Második'),
+                    child: Text('1'),
+
+
                   ),
-                  Container(
-                    padding: EdgeInsets.all(70.0),
-                    color: Colors.orange,
-                    child: CupertinoTextSelectionToolbarButton.text(text: 'Ötödik'),
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(30.0),
-                    color: Colors.yellowAccent,
-                    child: Text('Hatodik'),
-                  )
-                ],
+                ),
+                Expanded(
+                child: Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.orangeAccent,
+                child: Text('2'),
               ),
-              Container(
-                padding: EdgeInsets.all(30.0),
-                color: Colors.blueAccent,
-                child: CupertinoTextSelectionToolbarButton.text(text: 'Harmadik'),
-              ),
-              Container(
-                padding: EdgeInsets.all(30.0),
-                color: Colors.indigoAccent,
-                child: CupertinoTextSelectionToolbarButton.text(text: 'Negyedik'),
+                ),
+              Expanded(
+                child: Container(
+                padding: EdgeInsets.all(30),
+                color: Colors.redAccent,
+                child: Text('3'),
+                ),
               ),
 
             ],
