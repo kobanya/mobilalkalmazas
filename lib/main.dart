@@ -20,12 +20,10 @@ class Kezdo extends StatelessWidget {
             backgroundColor: Colors.lightGreen,
 // az alakalmazás teste, beállításokkal
           ),
-          body: const Center (
-
-            child: Image(
-                image: AssetImage('assets/kezdo_hatter.jpg'),
-              ),
+          body:  Center (
+            child: Image.asset('assets/kezdo_hatter.jpg'),
             ),
+
 
           floatingActionButton: FloatingActionButton(
             onPressed: () {  },
