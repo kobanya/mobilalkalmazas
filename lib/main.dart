@@ -30,10 +30,24 @@ class Kezdo extends StatelessWidget {
                 color: Colors.lightGreen,
                 child: CupertinoTextSelectionToolbarButton.text(text: 'Első'),
               ),
-              Container(
-                padding: EdgeInsets.all(30.0),
-                color: Colors.yellowAccent,
-                child: CupertinoTextSelectionToolbarButton.text(text: 'Második'),
+              Row(
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(30.0),
+                    color: Colors.yellowAccent,
+                    child: CupertinoTextSelectionToolbarButton.text(text: 'Második'),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(70.0),
+                    color: Colors.orange,
+                    child: CupertinoTextSelectionToolbarButton.text(text: 'Ötödik'),
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(30.0),
+                    color: Colors.yellowAccent,
+                    child: Text('Hatodik'),
+                  )
+                ],
               ),
               Container(
                 padding: EdgeInsets.all(30.0),
